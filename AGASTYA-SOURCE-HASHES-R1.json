@@ -1,0 +1,14 @@
+{
+  "architecture_source_sha256": "6ce4ae3dfe7af1bbc34ebc5f4a4cde0c63877837c59bc9285c2776a9046fe2a4",
+  "checkpoint_bytes_verified_by_filesystem_stat": 2529519595,
+  "checkpoint_provenance_manifest_sha256": "0d0ce14b46aec6ba1fc900c17e9fe7595c074eb68d6766784debd3884c4b961b",
+  "checkpoint_sha256_from_provenance_manifest": "ffd77d9c9d0f544c7ca8ca508ac8c75d837cecf985de7c422769a4dcfbcd9cf1",
+  "checkpoint_sha256_recomputed_for_publication": false,
+  "checkpoint_validation_manifest_sha256": "da2f0bdfc01bbca6f2e39a2cf5f1d8394d74ab85caecd5b2a00d900e4a6b4ab5",
+  "clean_p0_final_acceptance_manifest_sha256": "7d37806ecb85153c70621c5603fa2f94accc0698713cce3aa6861c3e9fac4ec8",
+  "doi_url": "https://doi.org/10.5281/zenodo.23054425",
+  "initialization_script_sha256": "54fc83ff58f40f68e3ab7db3518e3d012c0aa6dbb6dedc6fffec8a95918e8c72",
+  "note": "The 2.53 GB checkpoint hash in this R1 package is taken from the original checkpoint provenance manifest. R1 verified the checkpoint file byte size and independently re-hashed the smaller provenance, validation, tokenizer, architecture and acceptance artifacts.",
+  "reserved_doi": "10.5281/zenodo.23054425",
+  "tokenizer_artifact_sha256": "e8695c48f54bebac4c5e3a2ea01f743a56ce7268f73832ef9324eec5facf7257"
+}

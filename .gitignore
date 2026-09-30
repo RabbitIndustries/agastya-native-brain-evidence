@@ -1,0 +1,20 @@
+# Never publish private Agastya artifacts
+*.pt
+*.pth
+*.safetensors
+*.bin
+*.ckpt
+*.onnx
+*.gguf
+tokenizer.json
+vocab.json
+merges.txt
+*.key
+*.pem
+.env
+.env.*
+secrets/
+private/
+corpus/
+checkpoints/
+weights/

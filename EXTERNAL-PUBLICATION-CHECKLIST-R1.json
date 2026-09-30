@@ -1,0 +1,69 @@
+{
+  "doi": "10.5281/zenodo.23054425",
+  "doi_status": "PUBLISHED",
+  "doi_url": "https://doi.org/10.5281/zenodo.23054425",
+  "gates": [
+    {
+      "id": "P1",
+      "status": "PASS",
+      "title": "Stable public evidence URL",
+      "url": "https://zippri.com/agastya-native-brain-evidence/"
+    },
+    {
+      "id": "P2",
+      "status": "PASS",
+      "title": "Machine-readable provenance manifests"
+    },
+    {
+      "id": "P3",
+      "status": "PASS",
+      "title": "SHA-256 package checksums"
+    },
+    {
+      "artifact": "MODEL-CARD.md",
+      "id": "P4",
+      "status": "PASS",
+      "title": "Public model card"
+    },
+    {
+      "artifact": "INDEPENDENT-VERIFICATION-PROTOCOL-R1.md",
+      "id": "P5",
+      "status": "PASS",
+      "title": "Independent verification protocol"
+    },
+    {
+      "id": "P6",
+      "status": "PENDING",
+      "title": "Independent third-party verification report"
+    },
+    {
+      "doi": "10.5281/zenodo.23054425",
+      "id": "P7",
+      "status": "PASS",
+      "title": "DOI archival deposit",
+      "url": "https://zenodo.org/records/23054425"
+    },
+    {
+      "id": "P8",
+      "note": "GitHub public provenance mirror published.",
+      "status": "PASS",
+      "title": "External model-card mirror",
+      "url": "https://github.com/RabbitIndustries/agastya-native-brain-evidence"
+    },
+    {
+      "id": "P9",
+      "status": "PENDING",
+      "title": "Research preprint"
+    },
+    {
+      "id": "P10",
+      "status": "PENDING",
+      "title": "Same-suite external benchmark acceptance"
+    }
+  ],
+  "model": "Agastya AGI v01",
+  "published_at": "2026-09-30",
+  "reserved_doi": "10.5281/zenodo.23054425",
+  "schema": "agastya-external-publication-checklist-r1",
+  "zenodo_record_url": "https://zenodo.org/records/23054425"
+}

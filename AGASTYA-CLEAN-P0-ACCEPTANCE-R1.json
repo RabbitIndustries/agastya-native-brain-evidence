@@ -1,0 +1,30 @@
+{
+  "bm1b_handoff_eligible": true,
+  "checks": {
+    "bm000_hash_unchanged": true,
+    "cache_hash": true,
+    "canary_hash": true,
+    "completed_remote_verified": true,
+    "completed_status": true,
+    "completed_step": true,
+    "completed_tokens": true,
+    "completed_zero_third_party": true,
+    "final_checkpoint_exists": true,
+    "final_checkpoint_hash": true,
+    "latest_remote_verified": true,
+    "latest_step": true,
+    "runner_hash": true,
+    "tokenizer_hash": true,
+    "training_contract_hash": true
+  },
+  "doi_url": "https://doi.org/10.5281/zenodo.23054425",
+  "note": "Public transcription of the internal Clean-P0 R2 acceptance manifest.",
+  "promotion_eligible": true,
+  "published_at": "2026-09-30",
+  "release": "R1",
+  "reserved_doi": "10.5281/zenodo.23054425",
+  "schema": "agastya-clean-p0-final-acceptance-public-r1",
+  "source_generated_at_utc": "2026-09-27T21:39:47.013384+00:00",
+  "source_manifest_sha256": "7d37806ecb85153c70621c5603fa2f94accc0698713cce3aa6861c3e9fac4ec8",
+  "status": "PASS"
+}

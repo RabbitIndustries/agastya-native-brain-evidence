@@ -1,0 +1,155 @@
+{
+  "canonical_evidence_url": "https://zippri.com/agastya-native-brain-evidence/",
+  "doi": "10.5281/zenodo.23054425",
+  "doi_status": "PUBLISHED",
+  "doi_url": "https://doi.org/10.5281/zenodo.23054425",
+  "files": [
+    {
+      "bytes": 1927,
+      "name": ".zenodo.json.template",
+      "sha256": "3764181851f59270ca32a146f4e61789924e6cd97e540af23bfdadf0da28a979"
+    },
+    {
+      "bytes": 990,
+      "name": "AGASTYA-CHECKPOINT-VALIDATION-R1.json",
+      "sha256": "bce1dac44b6239c147a7ad8f64e374a994c2ccf778846f4af3bbee98af1ff050"
+    },
+    {
+      "bytes": 1031,
+      "name": "AGASTYA-CLEAN-P0-ACCEPTANCE-R1.json",
+      "sha256": "06a4e877d04d4ecb268ed4f53f58cc658341a190a8ba369b16f29163ddd3f5df"
+    },
+    {
+      "bytes": 2849,
+      "name": "AGASTYA-EVIDENCE-MANIFEST-R1.json",
+      "sha256": "ceae6736259b2780323d8a0e0f4dff4e1e68274b07d5ae747615295c3e4eee2e"
+    },
+    {
+      "bytes": 1922,
+      "name": "AGASTYA-NATIVE-WEIGHT-LINEAGE-R1.json",
+      "sha256": "4c3e5a0544c2e92e050314e64dae6163fcb595b38c5e66e40f95db5efaf9be43"
+    },
+    {
+      "bytes": 1252,
+      "name": "AGASTYA-SOURCE-HASHES-R1.json",
+      "sha256": "f1f9686e7e74276ed3807c2f11b5f28f65a27b2796f908696e3a9a85ee002671"
+    },
+    {
+      "bytes": 897,
+      "name": "AGASTYA-TOKENIZER-PROVENANCE-R1.json",
+      "sha256": "1a408fcb9d852fe28b666ce7e35e283708636f78aad2932e0ee6c3d34df58f8c"
+    },
+    {
+      "bytes": 1326,
+      "name": "CHECKSUMS.sha256",
+      "sha256": "be3393fa0784d0e57ddaa34ca5f4509c552738db67a4681b8f29323528e5877b"
+    },
+    {
+      "bytes": 813,
+      "name": "CITATION.cff",
+      "sha256": "6a7ce2b411e6b41ce4448405b47946d278f4af45e9bdc31277a0eacca76731a0"
+    },
+    {
+      "bytes": 1432,
+      "name": "EXTERNAL-PUBLICATION-CHECKLIST-R1.json",
+      "sha256": "db09f707fd30101ebcc21cf848c60f61cab5d83d2c86a147ae621273e5edf6ec"
+    },
+    {
+      "bytes": 626,
+      "name": "GITHUB-PUBLISHING-R1.md",
+      "sha256": "74ece7423f073bea93054c2d2f2a91652b7eae076843d6f37811f4924fb00041"
+    },
+    {
+      "bytes": 499,
+      "name": "HUGGINGFACE-PUBLISHING-R1.md",
+      "sha256": "eb793baf268d78abad2b08716f37d8e05bfbb307d38f59be40c114c38361520d"
+    },
+    {
+      "bytes": 1206,
+      "name": "INDEPENDENT-EVALUATOR-INVITATION-R1.md",
+      "sha256": "83b9710ef3261336a6684243dbc22e0e14c4673e489fa1cf06ad861dd109263f"
+    },
+    {
+      "bytes": 2731,
+      "name": "INDEPENDENT-VERIFICATION-PROTOCOL-R1.md",
+      "sha256": "6a5486cd8fa6a6128cc74b455df238364308f0d8be3519c152a8986b3eee9890"
+    },
+    {
+      "bytes": 2048,
+      "name": "INDIA-FIRST-CLAIM-POLICY-R1.md",
+      "sha256": "f2a17cf1541fc47d01f3d2d74f9c54816ef91df70dfce2509688b6a5b46580ac"
+    },
+    {
+      "bytes": 1012,
+      "name": "INITIALIZATION-EVIDENCE-EXCERPT-R1.txt",
+      "sha256": "a3cf438af6da9540f29b9b6e34377bb96cf376746069617f9c85005e30259266"
+    },
+    {
+      "bytes": 782,
+      "name": "LICENSE-EVIDENCE-DOCS-R1.md",
+      "sha256": "41c254a5caaaa234e48d2b4b2283af4dd697805c4510c037e5bfa002d24f880b"
+    },
+    {
+      "bytes": 537,
+      "name": "LICENSE-SELECTION-REQUIRED.md",
+      "sha256": "6d66027d637c05e265cf5083fc20e8f1267f1e7299e3d4275c53236fd33be932"
+    },
+    {
+      "bytes": 2250,
+      "name": "MODEL-CARD.md",
+      "sha256": "5a41b46bd49d013132bbcd5b7b294fff36198f3a0643cc9809f780f67c0362d4"
+    },
+    {
+      "bytes": 1303,
+      "name": "README-GITHUB.md",
+      "sha256": "44840b18ad4dd411dd7a2c73bc4a9eaec718702414cfe9593e978450f589942e"
+    },
+    {
+      "bytes": 1569,
+      "name": "README-HUGGINGFACE.md",
+      "sha256": "76f35dff5fae033a31affbe0cd9eee9580d7f767584584b3bbfb7ac68f172557"
+    },
+    {
+      "bytes": 1278,
+      "name": "README.md",
+      "sha256": "7165410ae4c7b955b1b8b966caa3f34047729f76da64538b2f5f428ec22472b0"
+    },
+    {
+      "bytes": 2787,
+      "name": "TECHNICAL-REPORT-R1.md",
+      "sha256": "ff54d8f544de6e415f373b1fa1eec0ee51fa741300223ea01288dd69c222cec7"
+    },
+    {
+      "bytes": 5145,
+      "name": "ZENODO-FINAL-SUBMISSION-GUIDE-R1.txt",
+      "sha256": "8df8dea9bfc0fbf720ce45b9a540343616ca99b298b5b27cb1bb43b3c8f9c641"
+    },
+    {
+      "bytes": 5332,
+      "name": "ZENODO-FORM-COPYPASTE-R1.txt",
+      "sha256": "85df2c71b1c81b86a8108e7f9d5419e15be1612b71126991962929eb28ed5e3f"
+    },
+    {
+      "bytes": 1927,
+      "name": "ZENODO-METADATA-DRAFT-R1.json",
+      "sha256": "3764181851f59270ca32a146f4e61789924e6cd97e540af23bfdadf0da28a979"
+    },
+    {
+      "bytes": 2167,
+      "name": "index.html",
+      "sha256": "53691517463df7ed4f5ea69bd58fa64a68100525ca2ba974c68add4f166be350"
+    }
+  ],
+  "github_ready": true,
+  "github_repository": "https://github.com/RabbitIndustries/agastya-native-brain-evidence",
+  "github_status": "PUBLISHED",
+  "huggingface_ready": true,
+  "huggingface_status": "READY_TO_PUBLISH",
+  "independent_evaluator_package_ready": true,
+  "independent_external_verification": "PENDING",
+  "model": "Agastya AGI v01",
+  "published_at": "2026-09-30",
+  "publisher": "Rabbit Industries Pvt Ltd",
+  "schema": "agastya-external-publication-bundle-r1",
+  "zenodo_record_url": "https://zenodo.org/records/23054425"
+}

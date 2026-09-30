@@ -1,0 +1,25 @@
+AGASTYA INITIALIZATION EVIDENCE EXCERPT R1
+Published: 2026-09-30
+
+Source file SHA-256:
+54fc83ff58f40f68e3ab7db3518e3d012c0aa6dbb6dedc6fffec8a95918e8c72
+
+The original initialization source records:
+- tokenizer SHA-256: e8695c48f54bebac4c5e3a2ea01f743a56ce7268f73832ef9324eec5facf7257
+- architecture source SHA-256: 6ce4ae3dfe7af1bbc34ebc5f4a4cde0c63877837c59bc9285c2776a9046fe2a4
+- architecture hash: 4ce0a1c9f9731dae26059646d3e09c776052faadc3dd2cbfcee5b3b2b7c8a5b0
+- deterministic random seed: 6261004079624731656
+- teacher_weight_ancestry: ZERO
+- third_party_weight_ancestry: false
+- third_party_tokenizer_artifact_import: false
+- production_training_executed at checkpoint step 0: false
+
+The validation manifest reports PASS with:
+- random_init: true
+- teacher_zero: true
+- third_party_weights_false: true
+- tokenizer_r2: true
+- unique_parameter_count_exact: true
+
+This excerpt is a public evidence summary, not a redistribution of proprietary training source code.
+Independent external verification: PENDING.

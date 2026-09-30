@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use the Agastya Native Brain Evidence Release R1, please cite this evidence release."
+title: "Agastya AGI v01 Native Brain Evidence Release R1"
+type: dataset
+authors:
+  - family-names: "Rabbit Industries Pvt Ltd"
+    given-names: "Agastya Native Brain Program"
+version: "R1"
+date-released: "2026-09-30"
+doi: "10.5281/zenodo.23054425"
+url: "https://zippri.com/agastya-native-brain-evidence/"
+repository-code: "https://zippri.com/agastya-native-brain-evidence/"
+abstract: "Public provenance evidence for the from-scratch Agastya AGI v01 native foundation-model lineage, including tokenizer, random-initialization checkpoint, validation and acceptance manifests. Independent external verification remains pending."
+
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.23054425"

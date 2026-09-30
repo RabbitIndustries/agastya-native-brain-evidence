@@ -1,0 +1,27 @@
+{
+  "checks": {
+    "architecture_exact": true,
+    "cache_r2": true,
+    "optimizer_none": true,
+    "production_training_false": true,
+    "random_init": true,
+    "state_dict_duplicate_delta_is_tied_embedding": true,
+    "step_zero": true,
+    "teacher_zero": true,
+    "third_party_weights_false": true,
+    "tied_embedding_storage_preserved": true,
+    "tokenizer_r2": true,
+    "unique_parameter_count_exact": true
+  },
+  "doi_url": "https://doi.org/10.5281/zenodo.23054425",
+  "note": "Public transcription of the internal validation manifest. Raw checkpoint is not redistributed in R1.",
+  "published_at": "2026-09-30",
+  "release": "R1",
+  "reserved_doi": "10.5281/zenodo.23054425",
+  "schema": "agastya-checkpoint-validation-public-r1",
+  "source_generated_at_utc": "2026-09-27T17:10:43.262710+00:00",
+  "source_manifest_sha256": "da2f0bdfc01bbca6f2e39a2cf5f1d8394d74ab85caecd5b2a00d900e4a6b4ab5",
+  "state_keys": 219,
+  "status": "PASS",
+  "unique_parameter_count": 1264715776
+}

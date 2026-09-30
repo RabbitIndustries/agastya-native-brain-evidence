@@ -1,0 +1,22 @@
+{
+  "added_tokens": 8,
+  "artifact_bytes": 6632268,
+  "artifact_publicly_redistributed": false,
+  "artifact_sha256": "e8695c48f54bebac4c5e3a2ea01f743a56ce7268f73832ef9324eec5facf7257",
+  "doi_url": "https://doi.org/10.5281/zenodo.23054425",
+  "evidence_scope": "Rabbit Industries provenance evidence. Full tokenizer artifact is retained privately and identified by SHA-256; public redistribution is not part of R1.",
+  "independent_external_verification": "PENDING",
+  "merge_rules": 98056,
+  "model": "Agastya AGI v01",
+  "model_type": "BPE",
+  "normalizer": "NFC",
+  "pre_tokenizer": "ByteLevel",
+  "published_at": "2026-09-30",
+  "release": "R1",
+  "reserved_doi": "10.5281/zenodo.23054425",
+  "schema": "agastya-tokenizer-provenance-r1",
+  "third_party_tokenizer_artifact_import": false,
+  "tokenizer_artifact": "ANTR2-R1-tokenizer.json",
+  "tokenizer_version": "1.0",
+  "vocab_size": 98320
+}
