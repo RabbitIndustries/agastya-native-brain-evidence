@@ -1,0 +1,35 @@
+name: Publish Agastya F3 8B Zenodo new version (authorized depositor)
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/publish-agastya-f3-8b-zenodo-version.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: agastya-f3-8b-zenodo-version
+  cancel-in-progress: false
+jobs:
+  zenodo_deposit:
+    if: github.repository == 'RabbitIndustries/agastya-native-brain-evidence'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Check out the fixed, reviewed deposit script
+        uses: actions/checkout@v4
+        with:
+          ref: 942419101e24dac87556ff87a9250756bba651f8
+          persist-credentials: false
+      - name: Validate publisher and apply authorized Zenodo deposit
+        env:
+          ZENODO_ACCESS_TOKEN: ${{ secrets.ZENODO_ACCESS_TOKEN }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 -m py_compile tools/zenodo_publish_f3_8b.py
+          if [ -z "${ZENODO_ACCESS_TOKEN:-}" ]; then
+            echo 'ZENODO_AUTH_REQUIRED: Configure repo secret ZENODO_ACCESS_TOKEN using Zenodo depositor scope; no upload attempted.'
+            exit 0
+          fi
+          python3 tools/zenodo_publish_f3_8b.py
