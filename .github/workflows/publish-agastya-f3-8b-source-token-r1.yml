@@ -33,8 +33,17 @@ jobs:
           test -s milestones/F3-8B-source-tokens-2026-10-19/README.md
           test -s milestones/F3-8B-source-tokens-2026-10-19/STATUS-R1.json
           if gh release view "$tag" --repo "$repo" >/dev/null 2>&1; then
-            echo '8B prerelease already exists; no duplicate publication'
-            exit 0
-          fi
+            echo 'Existing 8B prerelease preserved'
+          else
           gh release create "$tag" --repo "$repo" --target "$sha" --title "Agastya F3 R2 - 8B Source-Token Candidate Evidence R1" --notes 'Agastya AGI F3 R2 candidate training milestone: 8,000,000,000 source training tokens (19 October 2026), optimizer step 7,639. This is a source-token count, NOT an 8-billion-parameter model. Candidate only; production promotion remains unauthorized, and external verification and benchmark acceptance remain pending. This prerelease preserves the original v1.0.0-evidence-r1 and Zenodo 10.5281/zenodo.23054425, which do not represent this new milestone. No proprietary weights, raw corpus, or tokenizer are released. Evidence: https://github.com/RabbitIndustries/agastya-native-brain-evidence/tree/main/milestones/F3-8B-source-tokens-2026-10-19 .' --prerelease
-          gh release view "$tag" --repo "$repo" --json url,tagName,isPrerelease
+          fi
+          asset_name='Agastya-F3-8B-Source-Token-Candidate-Evidence-R1-Zenodo.zip'
+          asset_path="${RUNNER_TEMP}/${asset_name}"
+          curl --fail --location --silent --show-error --max-time 90 --retry 2 --output "$asset_path" 'https://huggingface.co/RabbitIndustries/Agastya-AGI-v01-Evidence/resolve/main/milestones/F3-8B-source-tokens-2026-10-19/Agastya-F3-8B-Source-Token-Candidate-Evidence-R1-Zenodo.zip'
+          echo "2017f00f03c3d6af356db064e4e3f16e399d30bd4625335a9bfc0939927f3cd3  $asset_path" | sha256sum --check --status
+          if gh release view "$tag" --repo "$repo" --json assets --jq '.assets[].name' | grep -Fxq "$asset_name"; then
+            echo 'Verified public archive already attached; refusing overwrite'
+          else
+            gh release upload "$tag" "$asset_path" --repo "$repo"
+          fi
+          gh release view "$tag" --repo "$repo" --json url,tagName,isPrerelease,assets
