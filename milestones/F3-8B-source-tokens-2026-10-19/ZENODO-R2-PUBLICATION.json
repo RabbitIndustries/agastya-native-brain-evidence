@@ -1,0 +1,38 @@
+{
+  "schema": "agastya-f3-8b-source-token-zenodo-publication-r2",
+  "publisher": "Rabbit Industries Pvt Ltd",
+  "milestone": "F3 R2 8-billion-source-token candidate completion",
+  "milestone_date": "2026-10-19",
+  "publication_date": "2026-10-22",
+  "version": "R2-F3-8B-SOURCE-TOKEN-CANDIDATE",
+  "status": "PUBLISHED_VERIFIED",
+  "zenodo": {
+    "record_id": 23557660,
+    "doi": "10.5281/zenodo.23557660",
+    "record_url": "https://zenodo.org/records/23557660",
+    "doi_url": "https://doi.org/10.5281/zenodo.23557660",
+    "concept_doi": "10.5281/zenodo.23054424",
+    "predecessor_record_id": 23054425,
+    "predecessor_doi": "10.5281/zenodo.23054425",
+    "file": {
+      "name": "Agastya-F3-8B-Source-Token-Candidate-Evidence-R1-Zenodo (1).zip",
+      "size_bytes": 4603,
+      "md5": "3493ddfc97b01bb9c94cf38050a26287",
+      "prepared_zip_sha256": "2017f00f03c3d6af356db064e4e3f16e399d30bd4625335a9bfc0939927f3cd3"
+    }
+  },
+  "claims_scope": {
+    "source_training_tokens": 8000000000,
+    "candidate_training_milestone": "RECORDED_COMPLETE",
+    "model_parameter_count_claim": "NOT_8_BILLION_PARAMETERS",
+    "production_promotion_authorized": false,
+    "independent_external_verification": "PENDING",
+    "external_benchmarks": "PENDING"
+  },
+  "verified_source": "Zenodo official public records API GET /api/records/23557660; DOI resolver HEAD; local archived ZIP MD5",
+  "mirrors": {
+    "github": "https://github.com/RabbitIndustries/agastya-native-brain-evidence/releases/tag/v1.1.0-f3-8b-token-evidence-r1",
+    "huggingface": "https://huggingface.co/RabbitIndustries/Agastya-AGI-v01-Evidence",
+    "zippri": "https://zippri.com/agastya-native-brain-evidence/f3-8b/"
+  }
+}
