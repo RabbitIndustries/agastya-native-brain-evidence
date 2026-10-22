@@ -20,9 +20,9 @@ This repository is the public provenance and verification-evidence mirror for **
 | Third-party weight ancestry | FALSE |
 | Teacher-weight ancestry | ZERO |
 | Tokenizer provenance package | PUBLISHED |
-| Zenodo archival DOI | PUBLISHED |
+| Zenodo R1 archival DOI | PUBLISHED |\n| Zenodo F3 R2 8B-source-token DOI | PUBLISHED |
 | GitHub public mirror | PUBLISHED |
-| Hugging Face model/evidence card | READY TO PUBLISH |
+| Hugging Face model/evidence card | PUBLISHED |
 | Independent third-party verification | PENDING |
 | Same-suite external benchmark qualification | PENDING |
 
@@ -72,7 +72,8 @@ On **19 October 2026**, the Agastya F3 R2 candidate-training ledger recorded com
 
 - [8B candidate training evidence](milestones/F3-8B-source-tokens-2026-10-19/README.md)
 - [8B machine-readable status](milestones/F3-8B-source-tokens-2026-10-19/STATUS-R1.json)
+- [Published R2 Zenodo DOI and checksum verification](milestones/F3-8B-source-tokens-2026-10-19/ZENODO-PUBLISHING-STATUS.md)
 - [Hugging Face evidence mirror](https://huggingface.co/RabbitIndustries/Agastya-AGI-v01-Evidence/tree/main/milestones/F3-8B-source-tokens-2026-10-19)
 - [Zippri 8B evidence page](https://zippri.com/agastya-native-brain-evidence/f3-8b/)
 
-The original R1 DOI (10.5281/zenodo.23054425) and September evidence remain unchanged. That DOI is **not** the new 8B evidence version DOI; a separate Zenodo version deposit requires authorized publication.
+**Published R2 source-token evidence DOI:** [10.5281/zenodo.23557660](https://doi.org/10.5281/zenodo.23557660) — [Zenodo public record](https://zenodo.org/records/23557660). The original September R1 DOI [10.5281/zenodo.23054425](https://doi.org/10.5281/zenodo.23054425) remains intact and separately citable. The two records share concept DOI [10.5281/zenodo.23054424](https://doi.org/10.5281/zenodo.23054424). The R2 archive's deposited checksum has been confirmed against the prepared evidence package.
