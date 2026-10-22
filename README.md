@@ -77,3 +77,17 @@ On **19 October 2026**, the Agastya F3 R2 candidate-training ledger recorded com
 - [Zippri 8B evidence page](https://zippri.com/agastya-native-brain-evidence/f3-8b/)
 
 **Published R2 source-token evidence DOI:** [10.5281/zenodo.23557660](https://doi.org/10.5281/zenodo.23557660) — [Zenodo public record](https://zenodo.org/records/23557660). The original September R1 DOI [10.5281/zenodo.23054425](https://doi.org/10.5281/zenodo.23054425) remains intact and separately citable. The two records share concept DOI [10.5281/zenodo.23054424](https://doi.org/10.5281/zenodo.23054424). The R2 archive's deposited checksum has been confirmed against the prepared evidence package.
+
+## Evidence Atlas & publisher-issued certificate — 22 October 2026
+
+The official [ZIPPRI Evidence Atlas](https://zippri.com/agastya-native-brain-evidence/f3-8b/) now provides a searchable evidence index, four-platform comparison, downloadable Rabbit Industries **publisher-issued** certificate and a local SHA-256 file checker.
+
+- [Certificate PDF (ZIPPRI)](https://zippri.com/agastya-native-brain-evidence/f3-8b/assets/Agastya-F3-8B-Source-Token-Evidence-Certificate-R2.pdf)
+- [Certificate PDF (GitHub release)](https://github.com/RabbitIndustries/agastya-native-brain-evidence/releases/download/v1.1.0-f3-8b-token-evidence-r1/Agastya-F3-8B-Source-Token-Evidence-Certificate-R2.pdf)
+- [Certificate manifest JSON](https://zippri.com/agastya-native-brain-evidence/f3-8b/assets/certificate-manifest.json)
+- [Certificate SHA256SUMS](https://zippri.com/agastya-native-brain-evidence/f3-8b/assets/SHA256SUMS.txt)
+- [Certificate code and public portal source](site/f3-8b-evidence-atlas-r2/index.html)
+
+**Certificate PDF SHA-256**: `12c176d7edffe664358e8c3b6534c94fb5fdf9c875b264b18c15cf7062940555`.
+
+**Scope**: The certificate is a company-issued attestation of an internally recorded 8-billion-**source-token** training milestone. It is **not** a third-party accredited certification, a digital signature, independent AGI proof or production-model approval. R2 DOI [10.5281/zenodo.23557660](https://doi.org/10.5281/zenodo.23557660) remains the official archived training-evidence citation.
