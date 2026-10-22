@@ -1,25 +1,36 @@
 # Zenodo R2 Publication — F3 8B Source-Token Candidate
 
-**Checked:** 22 October 2026  
-**Present public Zenodo version:** R1, DOI [10.5281/zenodo.23054425](https://doi.org/10.5281/zenodo.23054425)  
-**Version family:** [10.5281/zenodo.23054424](https://doi.org/10.5281/zenodo.23054424)  
-**8B new-version DOI:** **NOT ISSUED — DEPOSITOR AUTHORIZATION REQUIRED**
+**Verified:** 22 October 2026 (Zenodo public records API)  
+**Publication:** **PUBLISHED**  
+**Version-specific DOI:** [10.5281/zenodo.23557660](https://doi.org/10.5281/zenodo.23557660)  
+**Public record:** https://zenodo.org/records/23557660  
+**Version identifier:** `R2-F3-8B-SOURCE-TOKEN-CANDIDATE`  
+**Record title:** Agastya AGI v01 — F3 R2 8B Source-Token Candidate Evidence
 
-The original R1 record remains unchanged. This new publication must be made through **New version**, not as an overwrite or an unrelated DOI family.
+## Historical continuity
 
-## Completed publication work
+- Original **R1** version: https://doi.org/10.5281/zenodo.23054425 — preserved, separately citable.
+- **R2 (this 8B source-token evidence)**: https://doi.org/10.5281/zenodo.23557660 — issued and verified.
+- Shared concept DOI/version family: https://doi.org/10.5281/zenodo.23054424.
+- The new R2 record was checked as `status: published` and its DOI and shared concept DOI were verified from the official public API.
+- Both the old and new DOI resolve successfully to their distinct Zenodo public records.
 
-1. The 8B source-token evidence note and JSON are available on GitHub and Hugging Face.
-2. The SHA-256-checked evidence ZIP is attached to [GitHub prerelease v1.1.0-f3-8b-token-evidence-r1](https://github.com/RabbitIndustries/agastya-native-brain-evidence/releases/tag/v1.1.0-f3-8b-token-evidence-r1).
-3. Archive SHA-256: `2017f00f03c3d6af356db064e4e3f16e399d30bd4625335a9bfc0939927f3cd3`.
-4. The GitHub [Zenodo new-version publisher](https://github.com/RabbitIndustries/agastya-native-brain-evidence/actions/workflows/publish-agastya-f3-8b-zenodo-version.yml) is configured to require an account-owned secret `ZENODO_ACCESS_TOKEN`, then verify the archive, create a draft within the original record's version family, upload the ZIP and publish/verify a **new** DOI. Its no-credential protection was exercised successfully; **the live authenticated deposit has not been tested or performed**.
+## Public archive integrity
 
-## Account-owner action (do not share tokens in chat)
+- Deposited file: `Agastya-F3-8B-Source-Token-Candidate-Evidence-R1-Zenodo (1).zip`
+- Deposited size: **4,603 bytes**.
+- Zenodo-reported checksum: **MD5 `3493ddfc97b01bb9c94cf38050a26287`**, exactly matching the prepared evidence ZIP.
+- Prepared ZIP SHA-256: `2017f00f03c3d6af356db064e4e3f16e399d30bd4625335a9bfc0939927f3cd3`.
+- The `(1)` in Zenodo's filename is only a filename suffix; checksum and byte length confirm it matches the prepared ZIP.
 
-1. Sign into the Zenodo account that owns [the original R1 record](https://zenodo.org/records/23054425).
-2. From [Zenodo Applications](https://zenodo.org/account/settings/applications/), create an access token with only the deposit permissions required for new-version publication (Zenodo's API documents `deposit:write` and `deposit:actions`).
-3. Store it only in the private GitHub Actions repository secret [ZENODO_ACCESS_TOKEN](https://github.com/RabbitIndustries/agastya-native-brain-evidence/settings/secrets/actions/new) — never commit it or paste it into messages.
-4. Open [the publisher workflow](https://github.com/RabbitIndustries/agastya-native-brain-evidence/actions/workflows/publish-agastya-f3-8b-zenodo-version.yml) and select **Run workflow**, then verify the new DOI in the [Zenodo version list](https://zenodo.org/records/23054425/versions).
-5. If Zenodo rejects the API new-version action, use **New version** in the original record's authenticated web UI, upload [the checksum-verified ZIP](https://github.com/RabbitIndustries/agastya-native-brain-evidence/releases/download/v1.1.0-f3-8b-token-evidence-r1/Agastya-F3-8B-Source-Token-Candidate-Evidence-R1-Zenodo.zip), publish, and verify the resulting new DOI. Do not claim issuance until verified.
+## Where to cite
 
-**Evidence boundary:** 8B means eight billion training **source tokens**, not eight billion model parameters. Production promotion remains unauthorized. The archive contains no proprietary weights, complete tokenizer, private training data or credentials.
+For **the 8B training source-token milestone**, cite DOI **10.5281/zenodo.23557660**.
+
+For **the original native-brain provenance R1 evidence**, cite DOI **10.5281/zenodo.23054425**.
+
+This publication establishes a recorded **8-billion-source-token** candidate-training milestone (not an 8-billion-parameter model). Production promotion is **not authorized**; independent verification, external benchmarks and final model acceptance remain separate, pending gates.
+
+**GitHub 8B prerelease:** https://github.com/RabbitIndustries/agastya-native-brain-evidence/releases/tag/v1.1.0-f3-8b-token-evidence-r1  
+**Hugging Face mirror:** https://huggingface.co/RabbitIndustries/Agastya-AGI-v01-Evidence  
+**ZIPPRI 8B evidence:** https://zippri.com/agastya-native-brain-evidence/f3-8b/
