@@ -1,0 +1,38 @@
+name: Attach Agastya F3 R2 public evidence certificate
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/publish-agastya-f3-8b-certificate-asset.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  mirror_certificate:
+    if: github.repository == 'RabbitIndustries/agastya-native-brain-evidence'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Verify public certificate and attach to exact prerelease
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          repo='RabbitIndustries/agastya-native-brain-evidence'
+          tag='v1.1.0-f3-8b-token-evidence-r1'
+          filename='Agastya-F3-8B-Source-Token-Evidence-Certificate-R2.pdf'
+          expected='12c176d7edffe664358e8c3b6534c94fb5fdf9c875b264b18c15cf7062940555'
+          target_sha="$(gh api "repos/$repo/git/ref/tags/$tag" --jq '.object.sha')"
+          test "$target_sha" = 'a8f5db7469be200c455d4956ca703e0588572493'
+          test "$(gh release view "$tag" --repo "$repo" --json isPrerelease --jq '.isPrerelease')" = true
+          file="${RUNNER_TEMP}/${filename}"
+          curl --fail --location --silent --show-error --max-time 90 --retry 2 'https://zippri.com/agastya-native-brain-evidence/f3-8b/assets/Agastya-F3-8B-Source-Token-Evidence-Certificate-R2.pdf' --output "$file"
+          echo "$expected  $file" | sha256sum --check
+          if gh release view "$tag" --repo "$repo" --json assets --jq '.assets[].name' | grep -Fxq "$filename"; then
+            echo 'Certificate asset already exists; refusing overwrite'
+          else
+            gh release upload "$tag" "$file" --repo "$repo"
+          fi
+          gh release view "$tag" --repo "$repo" --json url,assets --jq '{url,assets:[.assets[].name]}'
