@@ -1,0 +1,45 @@
+name: Sync published Zenodo R2 DOI to GitHub candidate release
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/sync-zenodo-r2-doi-release.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  update_release_citation:
+    if: github.repository == 'RabbitIndustries/agastya-native-brain-evidence'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Verify exact 8B evidence tag and update only that release
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          repo='RabbitIndustries/agastya-native-brain-evidence'
+          tag='v1.1.0-f3-8b-token-evidence-r1'
+          commit='a8f5db7469be200c455d4956ca703e0588572493'
+          actual="$(gh api "repos/$repo/git/ref/tags/$tag" --jq '.object.sha')"
+          test "$actual" = "$commit"
+          test "$(gh release view "$tag" --repo "$repo" --json isPrerelease --jq '.isPrerelease')" = "true"
+          original="$RUNNER_TEMP/r2-release-original.md"
+          updated="$RUNNER_TEMP/r2-release-with-doi.md"
+          gh release view "$tag" --repo "$repo" --json body --jq '.body' > "$original"
+          grep -Fq 'Agastya AGI F3 R2 candidate training milestone:' "$original"
+          if grep -Fq '10.5281/zenodo.23557660' "$original"; then
+            echo 'R2 DOI already present; release left unchanged'
+            exit 0
+          fi
+          cp "$original" "$updated"
+          printf '\n\n## Official Zenodo R2 DOI (published 22 October 2026)\n' >> "$updated"
+          printf 'Version-specific, verified 8B source-token evidence DOI: https://doi.org/10.5281/zenodo.23557660\n' >> "$updated"
+          printf 'Zenodo public record: https://zenodo.org/records/23557660\n' >> "$updated"
+          printf 'Original R1 evidence DOI is preserved: https://doi.org/10.5281/zenodo.23054425\n' >> "$updated"
+          printf 'Both share version-family DOI: https://doi.org/10.5281/zenodo.23054424\n' >> "$updated"
+          printf '8B refers to training source tokens, not 8-billion model parameters. Production promotion remains unauthorized.\n' >> "$updated"
+          gh release edit "$tag" --repo "$repo" --notes-file "$updated"
+          gh release view "$tag" --repo "$repo" --json url,body,isPrerelease --jq '{url,isPrerelease,hasR2DOI:(.body|contains("10.5281/zenodo.23557660"))}'
