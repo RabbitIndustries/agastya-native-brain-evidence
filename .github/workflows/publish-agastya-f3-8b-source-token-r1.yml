@@ -1,0 +1,40 @@
+name: Publish Agastya F3 8B token candidate evidence R1
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - '.github/workflows/publish-agastya-f3-8b-source-token-r1.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  publish_evidence:
+    if: github.repository == 'RabbitIndustries/agastya-native-brain-evidence'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Check out the recorded evidence commit
+        uses: actions/checkout@v4
+        with:
+          ref: a8f5db7469be200c455d4956ca703e0588572493
+          persist-credentials: false
+      - name: Verify evidence files and create a prerelease without disturbing R1
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          repo='RabbitIndustries/agastya-native-brain-evidence'
+          sha='a8f5db7469be200c455d4956ca703e0588572493'
+          tag='v1.1.0-f3-8b-token-evidence-r1'
+          test "$(git rev-parse HEAD)" = "$sha"
+          test -s milestones/F3-8B-source-tokens-2026-10-19/README.md
+          test -s milestones/F3-8B-source-tokens-2026-10-19/STATUS-R1.json
+          if gh release view "$tag" --repo "$repo" >/dev/null 2>&1; then
+            echo '8B prerelease already exists; no duplicate publication'
+            exit 0
+          fi
+          gh release create "$tag" --repo "$repo" --target "$sha" --title "Agastya F3 R2 - 8B Source-Token Candidate Evidence R1" --notes 'Agastya AGI F3 R2 candidate training milestone: 8,000,000,000 source training tokens (19 October 2026), optimizer step 7,639. This is a source-token count, NOT an 8-billion-parameter model. Candidate only; production promotion remains unauthorized, and external verification and benchmark acceptance remain pending. This prerelease preserves the original v1.0.0-evidence-r1 and Zenodo 10.5281/zenodo.23054425, which do not represent this new milestone. No proprietary weights, raw corpus, or tokenizer are released. Evidence: https://github.com/RabbitIndustries/agastya-native-brain-evidence/tree/main/milestones/F3-8B-source-tokens-2026-10-19 .' --prerelease
+          gh release view "$tag" --repo "$repo" --json url,tagName,isPrerelease
