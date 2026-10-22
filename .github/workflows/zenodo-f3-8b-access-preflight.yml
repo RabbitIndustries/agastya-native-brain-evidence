@@ -1,0 +1,23 @@
+name: Zenodo F3 8B publication access preflight
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/zenodo-f3-8b-access-preflight.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  authorization:
+    runs-on: ubuntu-latest
+    env:
+      ZENODO_ACCESS_CONFIGURED: ${{ secrets.ZENODO_ACCESS_TOKEN != '' || secrets.ZENODO_API_TOKEN != '' || secrets.ZENODO_TOKEN != '' }}
+    steps:
+      - name: Verify presence of Zenodo publishing credentials without exposing them
+        shell: bash
+        run: |
+          if [ "$ZENODO_ACCESS_CONFIGURED" = "true" ]; then
+            echo 'ZENODO_ACCESS_CONFIGURED'
+          else
+            echo 'ZENODO_ACCESS_MISSING'
+          fi
