@@ -39,3 +39,16 @@ This supplementary milestone package is **not** a replacement for the earlier R1
 ## Disclosure scope
 
 This public package contains only selected numerical training status and cryptographic identifiers. Proprietary model weights, dataset records, tokenizer files, trainer source, private infrastructure configuration, credentials, and private checkpoint binaries are not distributed. This does not change any deployment, training, promotion, or freeze policy.
+
+## Final publication — Zenodo R2 DOI issued
+
+**Official R2 DOI:** [10.5281/zenodo.23557660](https://doi.org/10.5281/zenodo.23557660)  
+**Zenodo public record:** https://zenodo.org/records/23557660  
+**R2 version:** `R2-F3-8B-SOURCE-TOKEN-CANDIDATE`  
+**Published:** 22 October 2026  
+**Concept DOI (all versions):** https://doi.org/10.5281/zenodo.23054424  
+**Historical R1 DOI (preserved):** https://doi.org/10.5281/zenodo.23054425
+
+The public record was checked with Zenodo's API as `published`. Its 4,603-byte ZIP has the MD5 checksum `3493ddfc97b01bb9c94cf38050a26287`, matching the prepared archive. See [R2 Zenodo publication status](ZENODO-PUBLISHING-STATUS.md) and [machine-readable publication manifest](ZENODO-R2-PUBLICATION.json).
+
+As elsewhere in this report, the 8B milestone means **training source tokens**, not 8B model parameters. Production promotion remains unauthorized.
