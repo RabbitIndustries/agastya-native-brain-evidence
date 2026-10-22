@@ -1,0 +1,31 @@
+{
+  "schema": "agastya-f3-8b-source-token-candidate-evidence-r1",
+  "publisher": "Rabbit Industries Pvt Ltd",
+  "milestone": "F3 R2 8-billion-source-token candidate training",
+  "milestone_date_utc": "2026-10-19",
+  "published_disclosure_date": "2026-10-22",
+  "training": {
+    "status": "COMPLETE_CANDIDATE_TRAINING_R2",
+    "source_tokens": 8000000000,
+    "target_source_tokens": 8000000000,
+    "percent": 100,
+    "optimizer_step": 7639,
+    "source_status_sha256": "c5c00ae774eccd17c39bd4da601c5ab0605af699bd2970b6cf3f3eb06987bbc3",
+    "source_checkpoint_metadata_sha256": "5cd15798046e52c889e26843676b7a178da84b9adecce039fed98ec508ed3880",
+    "checkpoint_bytes": 21442876013,
+    "checkpoint_sha256_recorded": "3e0ec187db627012e9e5eba9f73285b76f2185562b7c83841bc54e496e6325af",
+    "checkpoint_digest_independently_rehashed_for_this_disclosure": false,
+    "ledger_exposure_records": 10368986,
+    "terminal_counter_reconciled": true
+  },
+  "gates": {
+    "production_promotion_authorized": false,
+    "independent_external_verification": "PENDING",
+    "external_benchmarks": "PENDING",
+    "separate_base_repair_canary": "REJECT_1B_BASE_REPAIR_CANARY_HOLD_R1"
+  },
+  "definition": "8B refers to source training tokens, not model parameter count",
+  "original_release": "https://github.com/RabbitIndustries/agastya-native-brain-evidence/releases/tag/v1.0.0-evidence-r1",
+  "original_zenodo_doi": "10.5281/zenodo.23054425",
+  "disclosure": "metadata-only; no proprietary weights, tokenizer, corpus or credentials"
+}
